@@ -8,9 +8,7 @@ body {
   direction: rtl;
 }
 
-/* ------------------------------
-   شريط التنقل (Navbar)
------------------------------- */
+/*   شريط التنقل  */
 .navbar {
   background: linear-gradient(90deg, #a779e9, #ff9ee2);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -109,9 +107,7 @@ body {
   color: #a84ca8;
 }
 
-/* ------------------------------
-   القسم الرئيسي (Hero)
------------------------------- */
+/*   القسم الرئيسي  */
 .hero {
   background: linear-gradient(135deg, #fef0f8, #fff0fa);
   text-align: center;
@@ -145,9 +141,7 @@ body {
   background-color: #8b3fa5;
 }
 
-/* ------------------------------
-   أنواع التصاميم
------------------------------- */
+/*    أنواع التصاميم */
 .design-types {
   text-align: center;
   padding: 60px 20px;
@@ -176,9 +170,7 @@ body {
   color: #fff;
 }
 
-/* ------------------------------
-   الأعمال (Cards)
------------------------------- */
+/*   الأعمال  */
 .works {
   text-align: center;
   padding: 60px 20px;
@@ -222,9 +214,7 @@ body {
   padding: 15px 0;
 }
 
-/* ------------------------------
-   جدول الأسعار
------------------------------- */
+/* جدول الأسعار */
 .pricing {
   text-align: center;
   padding: 60px 20px;
@@ -298,9 +288,7 @@ th {
   color: #333;
 }
 
-/* ------------------------------
-   تواصل معنا
------------------------------- */
+/*تواصل معنا */
 .contact {
   text-align: center;
   padding: 60px 20px;
@@ -328,7 +316,7 @@ th {
   font-family: inherit;
 }
 
-/*  الفوتر*/
+/*اسفل الصفحة */
   
 footer {
   background: linear-gradient(135deg, #fef0f8, #fff0fa);
