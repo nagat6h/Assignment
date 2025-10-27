@@ -170,11 +170,13 @@ body {
   color: #fff;
 }
 
-/*   الأعمال  */
+/* قسم الأعمال */
 .works {
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px 0;
+  background-color: #fff5fa; /* لون خلفية خفيف ي) */
 }
+
 
 .works h2 {
   color: #a84ca8;
@@ -182,36 +184,41 @@ body {
   margin-bottom: 30px;
 }
 
+/* ترتيب الكروت */
 .cards {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 20px; /* المسافة بين الكروت */
 }
+
 
 .card {
   background: #fff;
   border-radius: 15px;
   overflow: hidden;
-  width: 300px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  width: 300px; /* ← حجم الكرت */
+  box-shadow: 0 2px 8px rgba(219, 14, 14, 0.08);
   transition: 0.3s;
 }
 
+
+
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+ 
 }
-
+/* الصورة داخل الكرت */
 .card img {
   width: 100%;
   height: auto;
 }
 
+/* اسم اللوقو */
 .card h5 {
-  color: #a84ca8;
-  font-weight: 600;
-  padding: 15px 0;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #79b2ef;
 }
 
 /* جدول الأسعار */
@@ -230,13 +237,14 @@ table {
   width: 90%;
   margin: 0 auto;
   border-collapse: collapse;
-  background: #fff;
+  background: #f5f6f8;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 th, td {
+  color: #589cc9;
   padding: 15px;
-  border: 1px solid #f2d4e8;
+  border: 1px solid #f318aa;
 }
 
 th {
@@ -244,49 +252,7 @@ th {
   color: #a84ca8;
   font-weight: 700;
 }
-/* قسم الأعمال */
-.works {
-  text-align: center;
-  padding: 40px 0;
-  background-color: #fff5fa; /* لون خلفية خفيف (اختياري) */
-}
 
-/* ترتيب الكروت */
-.cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px; /* المسافة بين الكروت */
-}
-
-/* كل كرت */
-.card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  padding: 15px;
-  width: 250px;  /* ← حجم الكرت */
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* الصورة داخل الكرت */
-.card img {
-  width: 100%;   /* ← تمتد بعرض الكرت */
-  height: 150px; /* ← هنا تتحكمين بمقاس الصورة */
-  object-fit: cover; /* يملأ الإطار بدون تشويه */
-  border-radius: 8px;
-}
-
-/* اسم اللوقو */
-.card h5 {
-  margin-top: 10px;
-  font-size: 1.1rem;
-  color: #333;
-}
 
 /*تواصل معنا */
 .contact {
@@ -301,14 +267,14 @@ th {
 }
 
 .contact form {
-  max-width: 500px;
+  color: #589cc9;
+  max-width: 400px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.contact input,
 .contact textarea {
   padding: 10px;
   border-radius: 8px;
