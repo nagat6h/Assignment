@@ -81,21 +81,21 @@ body {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-
-/* العناصر الإضافية */
 .search-form input {
   padding: 6px 10px;
   border-radius: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #f71b1b;
   outline: none;
 }
+/* العناصر الإضافية */
+
 
 .lang-switch a {
   margin-left: 10px;
   text-decoration: none;
   color: #fff;
   font-weight: 500;
-  border: 1px solid #fff;
+  border: 1px solid #61bbf3;
   border-radius: 20px;
   padding: 4px 10px;
   font-size: 0.9rem;
@@ -103,7 +103,7 @@ body {
 }
 
 .lang-switch a:hover {
-  background-color: #fff;
+  background-color: #a1abf7;
   color: #a84ca8;
 }
 

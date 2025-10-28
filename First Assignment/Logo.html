@@ -1,132 +1,378 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8"/>
-   <!-- ربط ملف CSS 
-    <link rel="stylesheet" href="style.css" />  -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>لوقو ستايل | متجر اللوجوهات</title>
-<!-- لوجو للموقع -->
-  <link rel="icon" href="شعار لوجو.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم ليال</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    
+    
+    <style>
+        
+        .header-banner {
+            
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('pic/bnr.jpg') center/cover no-repeat;
+            height: 50vh; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .custom-brand-text {
+             color: #8d5a39 !important;
+            
+        }
+        
+        .btn-custom {
+            background-color: #8d5a39;
+            border-color: #8d5a39;
+            color: #ffffff;
+        }
+        .btn-custom:hover {
+            background-color: #6f472d;
+            border-color: #6f472d;
+            color: #ffffff;
+        }
+        
+        .category-bar {
+            background-color: #f8f9fa; 
+            border-bottom: 1px solid #dee2e6;
+            margin-bottom: 3rem; 
+        }
+
+        .card-img-top {
+            height: 350px;
+            object-fit: cover; 
+            overflow: hidden;
+            size: 300px;
+        }
+
+         
+        .footer-section {
+            direction: rtl;
+        }
+
+  
+        .footer-section h5,
+        .footer-section ul {
+            text-align: right !important;
+        }
+
+  
+        .footer-section.text-center h5,
+        .footer-section.text-center ul {
+            text-align: center !important;
+        }
+
+    
+        .footer-section ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 5px;
+        }
+
+        .custom-brand-text {
+            color: #b87333;
+            font-weight: bold;
+        }
+
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+    </style>
 </head>
 <body>
-   <!-- شريط التنقل -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="#" class="logo">لوقو ستايل</a>
 
-      <ul class="nav-links">
-        <li><a href="#">الرئيسية</a></li>
-        <li><a href="#">الأعمال</a></li>
-        <li><a href="#">الأسعار</a></li>
-        <li><a href="#">تواصل معنا</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand custom-brand-text fw-bold fs-3" href="#">ليَـال</a>
 
-        <li class="dropdown">
-          <a href="#">الخدمات ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">تصميم لوجو</a></li>
-            <li><a href="#">هوية بصرية</a></li>
-            <hr>
-            <li><a href="#">تصميم إعلانات</a></li>
-          </ul>
-        </li>
-
-        <li><a class="disabled" href="#">قريبًا</a></li>
-      </ul>
-
-      <form class="search-form">
-        <input type="text" placeholder="ابحث هنا...">
-      </form>
-
-      <div class="lang-switch">
-        <a href="#">العربية</a>
-        <a href="#">English</a>
-      </div>
-    </div>
-  </nav>
-
-
-    <!-- قسم أنواع التصاميم  -->
- <section class="design-types">
-    <h3>اختر نوع التصميم الذي يناسبك</h3>
-    <div class="buttons">
-      <button type="#">لوقو أساسي</button>
-       <button type="#">لوقو احترافي</button>
-       <button type="#">هوية بصرية</button>
-       <button type="#">إعلانات</button>
-       <button type="#">تصميم ذهبي</button>
-       <button type="#">شعار مخصص</button>
-    </div>
-   </section>
-       <!-- قسم عرض الأعمال -->
-     <section class="works">
-    <h2>أعمالنا</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="لوجو لشركة التقنية.png" alt="لوقو 1"  width="200px" height="200px">>
-        <h5>لوقو شركة تقنية</h5>
-      </div>
-      <div class="card">
-        <img src="لوجو لمطعم.png" alt="لوقو" width="200px" height="200px">
-        <h5>لوقو لمطعم</h5>
-      </div>
-      <div class="card">
-        <img src="لوقو متجر أزياء.png"  alt="لوقو" width="200px"height="200px">
-        <h5>لوقو متجر أزياء</h5>
-      </div>
-    </div>
-  </section>
-   
- <!--  قسم الباقات والأسعار -->
-  <section class="pricing">
-    <h2>الباقات والأسعار</h2>
-          <table border="2">
-          <tr>
-            <th>اسم الباقة</th>
-            <th>الوصف</th>
-            <th>السعر</th>
-          </tr>
-          <tr>
-            <td>باقة أساسية</td>
-            <td>تصميم بسيط بلون واحد</td>
-            <td>150 ر.س</td>
-          </tr>
-          <tr>
-            <td>باقة احترافية</td>
-            <td>3 تصاميم مختلفة + تعديلات</td>
-            <td>300 ر.س</td>
-          </tr>
-          <tr>
-            <td>باقة بلاتينية</td>
-            <td>هوية بصرية كاملة</td>
-            <td>600 ر.س</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  <!-- قسم تواصل معنا -->
-    <di>
-      <h2>تواصل معنا</h2>
-        <form action="" method="GET" NoValidate Target="_blank" >
-        <div >
-          <label>الاسم الكامل</label>
-          <input type="text" placeholder="أدخل اسمك">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="home.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="menu.html">القائمة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+                </ul>
+                
+                <a href="#" class="btn btn-custom d-block d-lg-inline-block">اطلب الآن <i class="fas fa-shopping-cart me-1"></i></a>
+            </div>
         </div>
-        <div>
-          <label>البريد الإلكتروني</label>
-          <input type="email"  placeholder="nagat6s@email.com">
-        </div>
-        <div>
-          <label>رسالتك</label>
-          <textarea name="subject" cols="20" rows="4" placeholder="أدخل رسالتك هنا..."></textarea>
-        </div>
-        <button type="#" >إرسال</button>
-      </form>
-    </div>
-<!--أسفل الصفحة-->
-  <footer>
-    <p>لوقو ستايل | Logo Style - جميع الحقوق محفوظة © 2025 </p>
-  </footer>
+    </nav>
 
+    <header class="header-banner text-white text-center">
+        <div class="container">
+            <h1 class="display-1 fw-bolder">قائمة الطعام</h1>
+            <p class="lead fw-light">اكتشف أطباقنا المبتكرة وتذوق أفضل النكهات</p>
+        </div>
+    </header>
+
+    <div class="category-bar">
+        <div class="container py-3">
+            <ul class="nav nav-pills justify-content-center flex-wrap">
+                <li class="nav-item"><a class="nav-link btn-custom mx-2 mb-2" href="#starters">المقبلات الباردة</a></li>
+                <li class="nav-item"><a class="nav-link btn-custom mx-2 mb-2" href="#main-dishes">الأطباق الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link btn-custom mx-2 mb-2" href="#desserts">الحلويات</a></li>
+                <li class="nav-item"><a class="nav-link btn-custom mx-2 mb-2" href="#drinks">المشروبات</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-12"> 
+                
+                <section id="starters" class="mb-5">
+                    <h2 class="display-5 border-bottom pb-2 mb-4 custom-brand-text">المقبلات الباردة</h2>
+                    <div class="row">
+                        
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="pic/salad.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">سلطة ليال الخاصة</h5>
+                                    <p class="card-text text-muted small">خس، خبز محمص، جبن بارميزان مع صلصة القيصر الخاصة بنا.</p>
+                                </div>
+                                <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                                    <span class="fs-5 text-success fw-bolder">25 SAR</span>
+                                    <a href="#" class="btn btn-sm btn-custom">أضف للسلة</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="pic/sop.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">شوربة اليوم الكريمية</h5>
+                                    <p class="card-text text-muted small">تتغير يومياً، اسأل عن اختيار الشيف. تقدم مع خبز محمص.</p>
+                                </div>
+                                <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                                    <span class="fs-5 text-success fw-bolder">18 SAR</span>
+                                    <a href="#" class="btn btn-sm btn-custom">أضف للسلة</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="pic/hms.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">حمص بالكمأة السوداء</h5>
+                                    <p class="card-text text-muted small">مزيج فاخر من الحمص الأصيل وزيت الكمأة السوداء النادرة.</p>
+                                </div>
+                                <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                                    <span class="fs-5 text-success fw-bolder">35 SAR</span>
+                                    <a href="#" class="btn btn-sm btn-custom">أضف للسلة</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="main-dishes" class="mb-5">
+                    <h2 class="display-5 border-bottom pb-2 mb-4 custom-brand-text">الأطباق الرئيسية</h2>
+                    <div class="row">
+                        
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="pic/stak.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">ستيك الأنجوس الفاخر</h5>
+                                    <p class="card-text text-muted small">250 جرام من لحم الأنجوس المشوي، يقدم مع البطاطا المهروسة وصلصة الفلفل.</p>
+                                </div>
+                                <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                                    <span class="fs-5 text-success fw-bolder">150 SAR</span>
+                                    <a href="#" class="btn btn-sm btn-custom">أضف للسلة</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="pic/pasta.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">باستا فوتوتشيني ألفريدو</h5>
+                                    <p class="card-text text-muted small">باستا طازجة مع صلصة ألفريدو الغنية والدجاج المشوي وجبن البارميزان.</p>
+                                </div>
+                                <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                                    <span class="fs-5 text-success fw-bolder">85 SAR</span>
+                                    <a href="#" class="btn btn-sm btn-custom">أضف للسلة</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="pic/bugre.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">برجر الترافل المميز</h5>
+                                    <p class="card-text text-muted small">لحم بقري محضر يدوياً، مع صلصة الترافل الخاصة وبطاطا مقلية.</p>
+                                </div>
+                                <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                                    <span class="fs-5 text-success fw-bolder">95 SAR</span>
+                                    <a href="#" class="btn btn-sm btn-custom">أضف للسلة</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="desserts" class="mb-5">
+                    <h2 class="display-5 border-bottom pb-2 mb-4 custom-brand-text">الحلويات</h2>
+                    <div class="row">
+                        
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="pic/date.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">كيكة التمر العربية</h5>
+                                    <p class="card-text text-muted small">كيكة دافئة وغنية بالتمر الطازج وصوص الكراميل المملح.</p>
+                                </div>
+                                <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                                    <span class="fs-5 text-success fw-bolder">45 SAR</span>
+                                    <a href="#" class="btn btn-sm btn-custom">أضف للسلة</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="pic/braw.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">براونيز الشوكولاتة الذائبة</h5>
+                                    <p class="card-text text-muted small">قطعة براونيز دافئة تقدم مع مغرفة آيس كريم فانيليا.</p>
+                                </div>
+                                <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                                    <span class="fs-5 text-success fw-bolder">38 SAR</span>
+                                    <a href="#" class="btn btn-sm btn-custom">أضف للسلة</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="pic/ice.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">تشكيلة الآيس كريم</h5>
+                                    <p class="card-text text-muted small">اختر من بين نكهات الفانيليا، الشوكولاتة، والفراولة (ثلاث مغارف).</p>
+                                </div>
+                                <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                                    <span class="fs-5 text-success fw-bolder">30 SAR</span>
+                                    <a href="#" class="btn btn-sm btn-custom">أضف للسلة</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="drinks" class="mb-5">
+                    <h2 class="display-5 border-bottom pb-2 mb-4 custom-brand-text">المشروبات</h2>
+                    <div class="row">
+                        
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="pic/cap.jpg" class="card-img-top" alt="صورة كابتشينو">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">كابتشينو ممتاز</h5>
+                                    <p class="card-text text-muted small">قهوة إسبريسو غنية مع كمية وفيرة من الحليب المبخر والرغوة.</p>
+                                </div>
+                                <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                                    <span class="fs-5 text-success fw-bolder">22 SAR</span>
+                                    <a href="#" class="btn btn-sm btn-custom">أضف للسلة</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="pic/orange.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">عصير برتقال طازج</h5>
+                                    <p class="card-text text-muted small">برتقال طبيعي معصور يومياً، منعش وغني بالفيتامينات.</p>
+                                </div>
+                                <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                                    <span class="fs-5 text-success fw-bolder">28 SAR</span>
+                                    <a href="#" class="btn btn-sm btn-custom">أضف للسلة</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="pic/mojito.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">موهيتو الليمون والنعناع</h5>
+                                    <p class="card-text text-muted small">مشروب كلاسيكي مثالي للتبريد في أيام الصيف الحارة.</p>
+                                </div>
+                                <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                                    <span class="fs-5 text-success fw-bolder">32 SAR</span>
+                                    <a href="#" class="btn btn-sm btn-custom">أضف للسلة</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+<footer class="bg-dark text-white pt-5">
+  <div class="container">
+    <div class="row pb-4 text-center text-md-start justify-content-center"> 
+      
+      <!-- تواصل معنا -->
+      <div class="col-md-4 mb-4 footer-section">
+        <h5 class="custom-brand-text mb-3 text-end">تواصل معنا</h5>
+        <ul class="list-unstyled text-end footer-list">
+          <li><i class="fas fa-map-marker-alt ms-2"></i> العنوان: طريق الملك، مبنى رقم 1234</li>
+          <li><i class="fas fa-phone ms-2"></i> الهاتف: +966 50 123 4567</li>
+          <li><i class="fas fa-envelope ms-2"></i> البريد: info@restaurant.com</li>
+        </ul>
+      </div>
+
+      <!-- ساعات العمل -->
+      <div class="col-md-4 mb-4 footer-section text-center">
+        <h5 class="custom-brand-text mb-3 text-center">ساعات العمل</h5>
+        <ul class="list-unstyled text-center footer-list">
+          <li>يومياً: 1:00 م - 1:00 ص</li>
+          <li>الجمعة: 2:00 م - 2:00 ص</li>
+        </ul>
+      </div>
+
+      <!-- تابعنا -->
+      <div class="col-md-4 mb-4 footer-section text-center">
+        <h5 class="custom-brand-text mb-3 text-center">تابعنا</h5>
+        <div class="social-icons d-flex justify-content-center align-items-center gap-3 mt-2">
+          <a href="#" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white fs-4"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white fs-4"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="text-center py-3 bg-secondary text-white-50">
+    <p class="mb-0">جميع الحقوق محفوظة لمطعم ليًـال&copy; 2024</p>
+  </div>
+</footer>
 </body>
 </html>
